@@ -1,3 +1,27 @@
+*,
+*:before,
+*:after{
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+list-style: none;
+text-decoration: none;
+}
+
+a, p, h1, h2, h3, h4, h5, h6{
+font-family: inherit;
+font-size: inherit;
+font-weight: inherit;
+font-style: inherit;
+}
+
+html,body{
+height: 100%;
+color: #fff;
+background-color: #000;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +34,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
