@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("./../fonts/MonumentExtended-Regular.woff2") format("woff2"),
+    url("./../fonts/MonumentExtended-Regular.woff") format("woff"),
+    url("./../fonts/MonumentExtended-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MonumentExtended";
+  src: url("./../fonts/MonumentExtended-Ultrabold.woff2") format("woff2"),
+    url("./../fonts/MonumentExtended-Ultrabold.woff") format("woff"),
+    url("./../fonts/MonumentExtended-Ultrabold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: rgb(17, 22, 27);
+  color: white;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+  width: 100vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header,
+header:before {
+  background: 50% 50% / cover;
+}
+
+header::before {
+  content: "";
+  width: 100vw;
+  height: 95vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background: url("./../assets/maria-ten-b7Hr2YK-FuI-unsplash.jpeg");
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-3px) scale(1);
+  z-index: -1;
+}
+
+header h1 {
+  -webkit-text-fill-color: rgb(
+    0,
+    0,
+    0
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "MonumentExtended";
+  font-weight: 700;
+}
+
+header h1:hover {
+  color: #ffff;
+  text-shadow: 0 0 40px rgb(241, 241, 243);
+}
+
+header p {
+  color: rgb(59, 58, 58);
+  position: absolute;
+  top: 93%;
+  left: 80%;
+  text-transform: none;
+  font-size: 0.6rem;
+}
+
+.movie-wrapper {
+  width: 100vw;
+  padding-top: 20 vh;
+  z-index: 2;
+  position: relative;
+}
+.movie-list {
+  margin: 0 auto;
+  padding-top: 20 vh;
+  max-width: 90%;
+  line-height: 30px;
+  font-weight: lighter;
+  padding: 40px;
+  color: rgb(255, 255, 255);
+}
