@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Movies from './components/Landing';
-import Landing from './components/Landing';
+
+import Landing from './components/Landing/Landing';
 
 function App() {
   return (

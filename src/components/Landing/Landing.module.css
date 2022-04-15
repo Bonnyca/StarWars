@@ -1,17 +1,17 @@
 @font-face {
   font-family: "MonumentExtended";
-  src: url("./../fonts/MonumentExtended-Regular.woff2") format("woff2"),
-    url("./../fonts/MonumentExtended-Regular.woff") format("woff"),
-    url("./../fonts/MonumentExtended-Regular.ttf") format("truetype");
+  src: url("./../../fonts/MonumentExtended-Regular.woff2") format("woff2"),
+    url("./../../fonts/MonumentExtended-Regular.woff") format("woff"),
+    url("./../../fonts/MonumentExtended-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "MonumentExtended";
-  src: url("./../fonts/MonumentExtended-Ultrabold.woff2") format("woff2"),
-    url("./../fonts/MonumentExtended-Ultrabold.woff") format("woff"),
-    url("./../fonts/MonumentExtended-Ultrabold.ttf") format("truetype");
+  src: url("./../../fonts/MonumentExtended-Ultrabold.woff2") format("woff2"),
+    url("./../../fonts/MonumentExtended-Ultrabold.woff") format("woff"),
+    url("./../../fonts/MonumentExtended-Ultrabold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -53,14 +53,14 @@ header:before {
 header::before {
   content: "";
   width: 100vw;
-  height: 95vh;
+  height: 90vh;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   display: block;
-  background: url("./../assets/maria-ten-b7Hr2YK-FuI-unsplash.jpeg");
+  background: url("./../../assets/maria-ten-b7Hr2YK-FuI-unsplash.jpeg");
   background-size: cover;
   transform-origin: center center 0;
   transform: translateZ(-3px) scale(1);
@@ -92,24 +92,15 @@ header h1:hover {
 header p {
   color: rgb(59, 58, 58);
   position: absolute;
-  top: 93%;
+  top: 86%;
   left: 80%;
   text-transform: none;
   font-size: 0.6rem;
 }
 
-.movie-wrapper {
+.movie_wrapper {
   width: 100vw;
   padding-top: 20 vh;
   z-index: 2;
-  position: relative;
-}
-.movie-list {
-  margin: 0 auto;
-  padding-top: 20 vh;
-  max-width: 90%;
-  line-height: 30px;
-  font-weight: lighter;
-  padding: 40px;
-  color: rgb(255, 255, 255);
+  min-height: 50px;
 }
