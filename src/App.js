@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-import Movie from "./components/MovieList/Movie/Movie";
+import Movie from "./components/Movie/Movie";
 import Landing from './components/Landing/Landing';
 
 function App() {

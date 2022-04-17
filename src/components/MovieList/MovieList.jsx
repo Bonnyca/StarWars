@@ -1,7 +1,5 @@
-import st from './MovieList.module.css';
-import Movie from './Movie/Movie';
 import { NavLink } from 'react-router-dom';
-
+import st from './MovieList.module.css';
 
 const MovieList = (props) => {
 
