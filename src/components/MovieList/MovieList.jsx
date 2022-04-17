@@ -1,5 +1,6 @@
 import st from './MovieList.module.css';
 import Movie from './Movie/Movie';
+import { NavLink } from 'react-router-dom';
 
 
 const MovieList = (props) => {
@@ -7,8 +8,9 @@ const MovieList = (props) => {
 
   return (
     <div className={st.movie_list}>
-      <div> Movie title 1 <span>1977</span></div>
-      <div> Movie title 2 <span>1988</span></div>
+        <NavLink to="/movies/2">movie title2</NavLink>
+        <NavLink to="/movies/3">movie title3</NavLink>
+        <NavLink to="/movies/1">movie title1</NavLink>
 
     </div>
   );
