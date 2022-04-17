@@ -6,9 +6,9 @@ const Movie = (props) => {
   let { id } = useParams();
 
   return (
-      <div className={st.movie_item}>
-        <h1> {id} </h1>
-      </div>
+    <div className={st.movie_item}>
+      <h1> {id} </h1>
+    </div>
   );
 };
 export default Movie;

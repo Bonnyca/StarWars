@@ -8,14 +8,11 @@ function App() {
     <BrowserRouter>
       <div className="app_wrapper">
         <Routes>
-          <Route path="/movies/:id" element= {<Movie/>}/>
-          <Route path="/" element={<Landing/>}/>
- 
-      </Routes>
-
-    </div>
+          <Route path="/" element={<Landing />} />
+          <Route path="/movies/:id" element={<Movie />} />
+        </Routes>
+      </div>
     </BrowserRouter>
-
   );
 }
 

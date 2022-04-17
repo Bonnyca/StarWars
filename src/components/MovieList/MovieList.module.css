@@ -1,38 +1,37 @@
 .movie_list {
-    padding: 0 50px;
-    margin-bottom: 50px;
+  padding: 0 50px;
+  margin-bottom: 50px;
 }
 
 .item {
-    margin: 0 auto;
-    width: auto;
-    max-width: 500px;
-    text-align: left;
-    line-height: 2.5rem;
-    color: #fff;
+  margin: 0 auto;
+  width: auto;
+  max-width: 500px;
+  text-align: left;
+  line-height: 2.5rem;
+  color: #fff;
 }
 
-.item:hover .title{
-    font-weight: normal;
+.item:hover .title {
+  font-weight: normal;
 }
 
-.item:hover .date{
-    font-weight: normal;
+.item:hover .date {
+  font-weight: normal;
 }
 
 .date {
-    margin-right: 10px;
-    text-align: left;
-    display: inline-block;
-    width: 160px;
-    color: rgb(180, 226, 247);
-    font-weight: lighter;
+  margin-right: 10px;
+  text-align: left;
+  display: inline-block;
+  width: 160px;
+  color: rgb(180, 226, 247);
+  font-weight: lighter;
 }
 
 .title {
-    display: inline-block;
-    color: rgb(221, 238, 245);
-    font-size: 1.5rem;
-    font-weight: lighter
-    /* text-align: left; */
+  display: inline-block;
+  color: rgb(221, 238, 245);
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
