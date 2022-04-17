@@ -36,7 +36,6 @@ class MovieList extends React.Component {
       );
   }
 
-
   render() {
     const { movies } = this.state;
     return (
@@ -44,9 +43,8 @@ class MovieList extends React.Component {
       {movies.map((movie) => (
         <div  key={movie.episode_id} className={st.item}>
           <NavLink key={movie.episode_id} to={`/movies/${movie.episode_id}`}>
-            <p>{movie.title}</p>
-            <span>{convertDate(movie.release_date)}</span>
-
+            <p className={st.date}>{convertDate(movie.release_date)}</p>
+            <p className={st.title}>{movie.title}</p>
           </NavLink>
         </div>
       ))}
@@ -54,41 +52,4 @@ class MovieList extends React.Component {
     )
   }
 }
-
-// const MovieList = (props) => {
-//   const [movies, setMovies] = useState([]);
-//   const url = "api/films";
-//   // Similar to componentDidMount and componentDidUpdate:
-//   useEffect(() => {
-//     fetch(`${BASE_URL}/${url}`)
-//       .then((res) => res.json())
-//       .then(
-//         (res) => setMovies(res.results),
-//         (error) => {
-//           console.log(error);
-//         }
-//       );
-//   }, [movies]);
-
-//   const convertDate =(date) => {
-//     let d = new Date(date)
-//     console.log(d)
-//     let options = { year: 'numeric', month: 'long', day: 'numeric' };
-//     return d.toLocaleString('us-US',options);
-//   }
-
-//   return (
-//     <div className={st.movie_list}>
-//       {movies.map((movie) => (
-//         <div  key={movie.episode_id} className={st.item}>
-//           <NavLink key={movie.episode_id} to={`/movies/${movie.episode_id}`}>
-//             <p>{movie.title}</p>
-//             <span>{convertDate(movie.release_date)}</span>
-
-//           </NavLink>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
 export default MovieList;
