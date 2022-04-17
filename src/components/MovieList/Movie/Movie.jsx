@@ -1,10 +1,12 @@
-import st from "./Movie.module.css";
+import { useParams } from "react-router-dom";
 
-const Movie = () => {
+
+const Movie = (props) => {
+  let { id } = useParams();
+
   return (
-    <div className={st.movie}>
-     movie1
-    </div>
+
+      <h1> {id} </h1>
   );
 };
 export default Movie;

@@ -1,6 +1,6 @@
 import st from "./Landing.module.css";
-import Sword from "./Sword/Sword";
-import MovieList from "../MovieList/MovieList";
+// import Sword from "./Sword/Sword";
+import { NavLink } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -11,7 +11,9 @@ const Landing = () => {
       </header>
 
       <div className={st.movie_wrapper}>
-          <MovieList />
+          <NavLink to="/movies/2">movie title2</NavLink>
+          <NavLink to="/movies/3">movie title3</NavLink>
+          <NavLink to="/movies/1">movie title1</NavLink>
       </div>
     </div>
   );

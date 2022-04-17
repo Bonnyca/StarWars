@@ -1,3 +1,5 @@
 .movie {
-    border: 1px solid fuchsia;
+    margin: 10px 20px 10px 20px;
+    border: 1px solid rgb(21, 24, 28);
+    cursor: pointer;
 }
