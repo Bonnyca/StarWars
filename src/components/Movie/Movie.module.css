@@ -2,7 +2,7 @@
   height: 100vh;
   padding: 50px 40px;
   display: grid;
-  grid-template-columns: 200px 2fr minmax(300px,380px);
+  grid-template-columns: 200px 2fr minmax(300px, 380px);
 }
 
 .crawl {
@@ -26,10 +26,12 @@
 .list {
   /* background-color: rgb(117, 110, 212); */
 }
-.content div span{
-    font-style: italic;
-    color: rgb(188, 188, 181);
-
+.content div {
+  line-height: 2rem;
+}
+.content div span {
+  font-style: italic;
+  color: rgb(188, 188, 181);
 }
 
 .content h1 {
@@ -39,9 +41,33 @@
   margin-top: 20px;
 }
 .statistic {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
   margin: 60px auto;
   padding-top: 20px;
   border-top-width: 4px;
   border-top-style: solid;
   border-image: linear-gradient(to right, #feda4a, #2a3642) 1;
+}
+
+.stat_item {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.stat_item p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+
+.stat_item {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
 }
