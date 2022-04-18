@@ -1,4 +1,47 @@
 .movie_item {
-    margin: 10px 20px 10px 20px;
-    border: 1px solid rgb(83, 125, 180);
+  height: 100vh;
+  padding: 50px 40px;
+  display: grid;
+  grid-template-columns: 200px 2fr minmax(300px,380px);
+}
+
+.crawl {
+  perspective: 75rem;
+  overflow: hidden;
+}
+
+.crawl p {
+  padding: 0 40px;
+  font-family: "Bebas Neue";
+  text-align: justify;
+  line-height: 150%;
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #feda4a;
+  letter-spacing: normal;
+  transform: rotateX(50deg);
+  overflow: hidden;
+}
+
+.list {
+  /* background-color: rgb(117, 110, 212); */
+}
+.content div span{
+    font-style: italic;
+    color: rgb(188, 188, 181);
+
+}
+
+.content h1 {
+  font-size: 48px;
+  line-height: 50px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.statistic {
+  margin: 60px auto;
+  padding-top: 20px;
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-image: linear-gradient(to right, #feda4a, #2a3642) 1;
 }
