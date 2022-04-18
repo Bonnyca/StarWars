@@ -6,7 +6,6 @@ import { BASE_URL } from "../../constants";
 
 const convertDate = (date) => {
   let d = new Date(date);
-  console.log(d);
   let options = { year: "numeric", month: "long", day: "numeric" };
   return d.toLocaleString("us-US", options);
 };
