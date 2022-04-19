@@ -22,9 +22,14 @@
   transform: rotateX(50deg);
   overflow: hidden;
 }
-
 .list {
-  /* background-color: rgb(117, 110, 212); */
+    margin-top: 100px;
+}
+.list span{
+    font-weight: bold;
+    line-height: 2rem;
+    
+
 }
 .content div {
   line-height: 2rem;

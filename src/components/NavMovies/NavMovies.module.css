@@ -1,0 +1,27 @@
+.movie_list {
+  /* padding: 0 50px; */
+  /* margin-bottom: 50px; */
+}
+
+.item {
+  margin: 0 auto;
+  width: auto;
+  max-width: 500px;
+  text-align: left;
+  /* line-height: 2.5rem; */
+  color: #fff;
+
+}
+
+.item:hover .title {
+  font-weight: normal;
+}
+
+
+.title {
+  display: inline-block;
+  color: rgb(221, 238, 245);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}

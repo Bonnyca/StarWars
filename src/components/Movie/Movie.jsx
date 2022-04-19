@@ -2,9 +2,10 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import st from "./Movie.module.css";
+import NavMovies from "../NavMovies/NavMovies";
 import { BASE_URL } from "./../../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJedi } from "@fortawesome/free-solid-svg-icons";
+import { faJedi, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
 import {
   faGalacticRepublic,
   faGalacticSenate,
@@ -30,7 +31,11 @@ const Movie = (props) => {
   }
   return (
     <div className={st.movie_item}>
-      <div className={st.list}>Movie List</div>
+      <div className={st.list}> 
+      <span>All Movies {' '}  </span> 
+      <FontAwesomeIcon icon={faVideoCamera}/>
+      <NavMovies/>
+      </div>
       {/* TODO Movie list */}
       <div className={st.content}>
         <h1>{movie.title}</h1>

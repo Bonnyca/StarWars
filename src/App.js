@@ -10,6 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/movies/:id" element={<Movie />} />
+          
         </Routes>
       </div>
     </BrowserRouter>
