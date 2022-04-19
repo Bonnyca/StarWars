@@ -4,6 +4,7 @@ import st from "./NavMovies.module.css";
 import { BASE_URL } from "../../constants";
 
 
+
 class NavMovies extends React.Component {
 
   constructor(props) {

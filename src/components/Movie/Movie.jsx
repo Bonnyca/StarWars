@@ -36,7 +36,6 @@ const Movie = (props) => {
       <FontAwesomeIcon icon={faVideoCamera}/>
       <NavMovies/>
       </div>
-      {/* TODO Movie list */}
       <div className={st.content}>
         <h1>{movie.title}</h1>
         <div>
@@ -57,15 +56,18 @@ const Movie = (props) => {
           <div className={st.stat_item}>
             <FontAwesomeIcon icon={faJedi} size="5x" />
             <p>Characters</p>
+            <div>{movie.characters.length}</div>
           </div>
           <div className={st.stat_item}>
             <FontAwesomeIcon icon={faGalacticSenate} size="5x"/>
 
             <p>Starships</p>
+            <div>{movie.starships.length}</div>
           </div>
           <div className={st.stat_item}>
             <FontAwesomeIcon icon={faGalacticRepublic} size="5x" />
             <p>Planets</p>
+            <div>{movie.planets.length}</div>
           </div>
         </div>
       </div>
