@@ -5,7 +5,7 @@ import st from "./Movie.module.css";
 import NavMovies from "../NavMovies/NavMovies";
 import { BASE_URL } from "./../../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJedi, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
+import { faJedi, faRightToBracket, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
 import {
   faGalacticRepublic,
   faGalacticSenate,
@@ -33,7 +33,7 @@ const Movie = (props) => {
     <div className={st.movie_item}>
       <div className={st.list}> 
       <span>All Movies {' '}  </span> 
-      <FontAwesomeIcon icon={faVideoCamera}/>
+      <FontAwesomeIcon icon={faVideoCamera}  fade/>
       <NavMovies/>
       </div>
       <div className={st.content}>
