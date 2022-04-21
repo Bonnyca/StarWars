@@ -1,11 +1,14 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React,  { useState, useEffect }from "react";
+import { useParams, NavLink } from "react-router-dom";
 import st from "./Movie.module.css";
 import NavMovies from "../NavMovies/NavMovies";
 import { BASE_URL } from "./../../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJedi, faRightToBracket, faVideoCamera } from "@fortawesome/free-solid-svg-icons";
+import {
+  faJedi,
+  faAngleRight,
+  faVideoCamera,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faGalacticRepublic,
   faGalacticSenate,
@@ -31,10 +34,10 @@ const Movie = (props) => {
   }
   return (
     <div className={st.movie_item}>
-      <div className={st.list}> 
-      <span>All Movies {' '}  </span> 
-      <FontAwesomeIcon icon={faVideoCamera}  fade/>
-      <NavMovies/>
+      <div className={st.list}>
+        <span>All Movies </span>
+        <FontAwesomeIcon icon={faVideoCamera} fade />
+        <NavMovies />
       </div>
       <div className={st.content}>
         <h1>{movie.title}</h1>
@@ -55,19 +58,43 @@ const Movie = (props) => {
         <div className={st.statistic}>
           <div className={st.stat_item}>
             <FontAwesomeIcon icon={faJedi} size="5x" />
-            <p>Characters</p>
-            <div>{movie.characters.length}</div>
+            <p className={st.stat_item_title}>Characters</p>
+            <div>
+              <p>{movie.characters.length}</p>
+              <span> in this episode</span>
+              <div className={st.stat_item_to_all}>
+                <div>
+                  {" "}
+                  All Characters <FontAwesomeIcon icon={faAngleRight} />{" "}
+                </div>
+              </div>
+            </div>
           </div>
           <div className={st.stat_item}>
-            <FontAwesomeIcon icon={faGalacticSenate} size="5x"/>
+            <FontAwesomeIcon icon={faGalacticSenate} size="5x" />
 
-            <p>Starships</p>
-            <div>{movie.starships.length}</div>
+            <p className={st.stat_item_title}>Starships</p>
+            <p>{movie.starships.length}</p>
+            <span> in this episode</span>
+            <div className={st.stat_item_to_all}>
+              <div>
+                {" "}
+                All <FontAwesomeIcon icon={faAngleRight} />{" "}
+              </div>
+            </div>
           </div>
           <div className={st.stat_item}>
             <FontAwesomeIcon icon={faGalacticRepublic} size="5x" />
-            <p>Planets</p>
-            <div>{movie.planets.length}</div>
+            <p className={st.stat_item_title}>Planets</p>
+            <p>{movie.planets.length}</p>
+            <span> in this episode</span>{" "}
+            <NavLink to={"/planets"}>
+              <div className={st.stat_item_to_all}>
+                <div>
+                  All Planets <FontAwesomeIcon icon={faAngleRight} />{" "}
+                </div>
+              </div>
+            </NavLink>
           </div>
         </div>
       </div>

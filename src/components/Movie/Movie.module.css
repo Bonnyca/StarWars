@@ -23,15 +23,14 @@
   overflow: hidden;
 }
 .list {
-    margin-top: 100px;
-    color:#feda4a
+  margin-top: 100px;
+  color: #feda4a;
 }
-.list span{
-    font-weight: 400;
-    line-height: 2rem;
-    color:#feda4a;
-    text-transform: uppercase;
-
+.list span {
+  font-weight: 400;
+  line-height: 2rem;
+  color: #feda4a;
+  text-transform: uppercase;
 }
 
 .content div {
@@ -49,8 +48,8 @@
   margin-top: 20px;
 }
 .statistic {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 60px auto;
   padding-top: 20px;
   border-top-width: 4px;
@@ -61,21 +60,30 @@
 .stat_item {
   display: inline-block;
   margin: 10px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
-.stat_item p{
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 300;
-
+.stat_item p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .stat_item {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
+.stat_item_title {
+  margin-bottom: 20px;
+}
+
+.stat_item_to_all {
+  margin-top: 20px;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
 }
