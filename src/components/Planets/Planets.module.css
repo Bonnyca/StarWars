@@ -2,3 +2,47 @@
   margin:30px;
 
 }
+.content {
+  display: grid;
+  margin: 20 auto;
+}
+
+.planet {
+  width: 100%;
+}
+.btn_wrap {
+  margin-top: 40px;
+  justify-content: center;
+}
+.btn {
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  background-color: #11161B;
+  margin:0 2em 2em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-weight:300;
+  color:#f7f5f2;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  color:#11161B;
+  background-color:#FFFFFF;
+}
+
+.btn:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+
+@media all and (max-width:30em){
+  a.btn{
+  display:block;
+  margin:0.4em auto;
+  }
+  }
