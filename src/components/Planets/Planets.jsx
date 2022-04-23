@@ -21,10 +21,10 @@ const Planets = (props) => {
       setIsLoadng(false);
     });
   };
-  
+
   useEffect(() => {
     fetchPlanets();
-    console.log('planets inside useE',planets)
+    console.log("planets inside useE", planets);
   }, [page]);
 
   const dencity = (population, diameter) => {
@@ -38,14 +38,31 @@ const Planets = (props) => {
     <div className={st.wrap}>
       <h1 className={st.title}>All Planets in Star Wars</h1>
       <div className={st.content}>
+        <div className={st.table_header}>
+          <div>Planet</div>
+          <p>Diameter</p>
+          <p>Population</p>
+          <p>Rotation Period</p>
+          <p>Orbital Period</p>
+          <p>Planet Climate</p>
+        </div>
+
         {planets.results.map((planet) => (
           <div className={st.planet}>
-            <span>{planet.name}</span>
-            <span>{planet.diameter}</span>
-            <span>{planet.population}</span>
-            <span>{planet.rotation_period}</span>
-            <span>{planet.orbital_period}</span>
-            <span>{planet.climate}</span>
+            <div>{planet.name}</div>
+            <div>
+              {parseInt(planet.diameter)
+                ? new Intl.NumberFormat().format(parseInt(planet.diameter))
+                : "unknown"}
+            </div>
+            <div>
+              {parseInt(planet.population)
+                ? new Intl.NumberFormat().format(parseInt(planet.population))
+                : "unknown"}
+            </div>
+            <div>{planet.rotation_period}</div>
+            <div>{planet.orbital_period}</div>
+            <div>{planet.climate}</div>
           </div>
         ))}
       </div>
