@@ -1,41 +1,30 @@
-import React from "react";
+import React, { useState, useEffect} from "react";
 import { NavLink } from "react-router-dom";
-import { BASE_URL } from "../../constants";
+import swapiModule from "../../services/swapi";
 import st from "./NavMovies.module.css";
 
 
 
-class NavMovies extends React.Component {
+const NavMovies = () => {
+  const [movies, setMovies] = useState({});
+  const [isLoading, setIsLoadng] = useState(true);
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      movies: [],
-      isLoading: true,
-    };
-  }
 
-  componentDidMount() {  
-    const url = "api/films";
+  const fetchMovies = () => {
+    /* A func to get a list of the films and set them to the state. */
+    swapiModule.getFilms(function (data) {
+      setMovies(data.results);
+      setIsLoadng(false);
+    });
+  };
 
-    fetch(`${BASE_URL}/${url}`)
-      .then((res) => res.json())
-      .then(
-        (res) => this.setState({
-            movies: res.results,
-            isLoading: false,
-          }),
-        (error) => {
-          console.log(error);
-        }
-      );
-  }
+  useEffect(() => {
+    fetchMovies();
+  }, []);
 
-  render() {
-    const { movies, isLoading } = this.state;
-    if (isLoading) {
-      return <div>Loading...</div>;
-    }
+if (isLoading) {
+  return <div>Loading...</div>;
+}
 
     return (
       <div className={st.movie_list}>
@@ -49,5 +38,5 @@ class NavMovies extends React.Component {
       </div>
     );
   }
-}
+
 export default NavMovies;
