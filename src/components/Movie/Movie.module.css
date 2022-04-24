@@ -38,7 +38,7 @@
 }
 .content div span {
   font-style: italic;
-  color: rgb(188, 188, 181);
+  color: rgb(165, 215, 220);
 }
 
 .content h1 {
@@ -60,7 +60,11 @@
 .stat_item {
   display: inline-block;
   margin: 10px;
+  
   /* cursor: pointer; */
+}
+.count {
+  color: rgb(165, 215, 220);
 }
 
 .stat_item p {
