@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import st from "./NavMovies.module.css";
 import { BASE_URL } from "../../constants";
+import st from "./NavMovies.module.css";
 
 
 

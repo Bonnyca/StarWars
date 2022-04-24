@@ -4,6 +4,7 @@ import swapiModule from "../../services/swapi";
 import { BackBtn } from "../Back/BackBtn";
 
 const Starships = (props) => {
+   /* TO-DO: refactor to reuse with Species and Planets Components */
   const [starships, setStarships] = useState({});
   const [isLoading, setIsLoadng] = useState(true);
   const [page, setPage] = useState(1);
@@ -60,10 +61,10 @@ const Starships = (props) => {
             <div>{starship.max_atmosphering_speed}</div>
             <div>{starship.crew}</div>
             <div>
-            {parseInt(starship.passengers)
+              {parseInt(starship.passengers)
                 ? new Intl.NumberFormat().format(parseInt(starship.passengers))
                 : starship.passengers}
-                </div>
+            </div>
           </div>
         ))}
       </div>

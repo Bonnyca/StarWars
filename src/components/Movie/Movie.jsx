@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams, NavLink } from "react-router-dom";
-import st from "./Movie.module.css";
-import NavMovies from "../NavMovies/NavMovies";
-import { BASE_URL } from "./../../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faJedi,
@@ -14,8 +11,13 @@ import {
   faGalacticSenate,
 } from "@fortawesome/free-brands-svg-icons";
 import { BackBtn } from "../Back/BackBtn";
+import NavMovies from "../NavMovies/NavMovies";
+import { BASE_URL } from "./../../constants";
+import st from "./Movie.module.css";
+
 
 const Movie = (props) => {
+  /* Component fetch list of Star Wars mobies using async function utilize hooks*/
   const [movie, setMovie] = useState({});
   const [isLoading, setIsloading] = useState(true);
   let { id } = useParams();
@@ -35,14 +37,14 @@ const Movie = (props) => {
   }
   return (
     <div className={st.movie_item}>
-      
       <div className={st.list}>
         <span>All Movies </span>
         <FontAwesomeIcon icon={faVideoCamera} fade />
         <NavMovies />
+        {/* <MovieList/> */}
       </div>
       <div className={st.content}>
-      <BackBtn />
+        <BackBtn />
         <h1>{movie.title}</h1>
         <div>
           {" "}
@@ -66,12 +68,12 @@ const Movie = (props) => {
               <p className={st.count}>{movie.species.length}</p>
               <span> in this episode</span>
               <NavLink to={"/species"}>
-              <div className={st.stat_item_to_all}>
-                <div>
-                  All Species <FontAwesomeIcon icon={faAngleRight} />{" "}
+                <div className={st.stat_item_to_all}>
+                  <div>
+                    All Species <FontAwesomeIcon icon={faAngleRight} />{" "}
+                  </div>
                 </div>
-              </div>
-            </NavLink>
+              </NavLink>
             </div>
           </div>
           <div className={st.stat_item}>

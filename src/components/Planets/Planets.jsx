@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import st from "./Planets.module.css";
 import swapiModule from "../../services/swapi";
+import { BackBtn } from "../Back/BackBtn";
+import st from "./Planets.module.css";
 
 const Planets = (props) => {
+  /* TO-DO: refactor to reuse with Species and Starship Components */
   const [planets, setPlanets] = useState({});
   const [isLoading, setIsLoadng] = useState(true);
   const [page, setPage] = useState(1);
@@ -27,15 +29,13 @@ const Planets = (props) => {
     console.log("planets inside useE", planets);
   }, [page]);
 
-  const dencity = (population, diameter) => {
-    return (Math.PI * parseInt(diameter)) / parseInt(population);
-  };
   if (isLoading) {
     return <div>Loading...</div>;
   }
 
   return (
     <div className={st.wrap}>
+      <BackBtn />
       <h1 className={st.title}>All Planets in Star Wars</h1>
       <div className={st.content}>
         <div className={st.table_header}>

@@ -3,7 +3,7 @@ import st from "./Species.module.css";
 import swapiModule from "../../services/swapi";
 import { BackBtn } from "../Back/BackBtn";
 
-const Species = (props) => {
+const Species = (props) => { /* TO-DO: refactor to reuse with Planets and Starship Components */
   const [species, setSpecies] = useState({});
   const [isLoading, setIsLoadng] = useState(true);
   const [page, setPage] = useState(1);
@@ -15,9 +15,9 @@ const Species = (props) => {
   };
 
   const fetchSpecies = () => {
-    swapiModule.getAllSpecies({page:page}, function (data) {
+    swapiModule.getAllSpecies({ page: page }, function (data) {
       setSpecies(data);
-      console.log(data)
+      console.log(data);
       setHasNext(data.next != null);
       setHasPrev(data.previous != null);
       setIsLoadng(false);
