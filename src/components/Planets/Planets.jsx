@@ -26,7 +26,6 @@ const Planets = (props) => {
 
   useEffect(() => {
     fetchPlanets();
-    console.log("planets inside useE", planets);
   }, [page]);
 
   if (isLoading) {

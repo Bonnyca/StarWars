@@ -17,7 +17,6 @@ const Species = (props) => { /* TO-DO: refactor to reuse with Planets and Starsh
   const fetchSpecies = () => {
     swapiModule.getAllSpecies({ page: page }, function (data) {
       setSpecies(data);
-      console.log(data);
       setHasNext(data.next != null);
       setHasPrev(data.previous != null);
       setIsLoadng(false);
