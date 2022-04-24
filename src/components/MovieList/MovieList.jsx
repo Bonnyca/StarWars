@@ -46,7 +46,7 @@ class MovieList extends React.Component {
       <div className={st.movie_list}>
         {movies.map((movie) => (
           <div key={movie.episode_id} className={st.item}>
-            <NavLink to={`/movies/${movie.episode_id}`}>
+            <NavLink to={`/movies/${movie.url.replace(/\/$/, "").split("/").pop()}`}>
               <p className={st.date}>{convertDate(movie.release_date)}</p>
               <p className={st.title}>{movie.title}</p>
             </NavLink>

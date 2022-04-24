@@ -41,7 +41,7 @@ class NavMovies extends React.Component {
       <div className={st.movie_list}>
         {movies.map((movie, index) => (
           <div key={movie.episode_id} className={st.item}>
-            <NavLink to={`/movies/${index+1}`}>
+            <NavLink to={`/movies/${movie.url.replace(/\/$/, "").split("/").pop()}`}>
               <p className={st.title}>{movie.title}</p>
             </NavLink>
           </div>
