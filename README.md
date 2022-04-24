@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Star Wars >> Code The Dream pre-work
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="media/book-journal-whills-solid.svg" width="40" height="40" >
 
-## Available Scripts
+This project is the pre-work for Code the Dream’s Advanced classes. 
+<br>
 
-In the project directory, you can run:
+## Link
+To-do: add link to the project hosted on Github
 
-### `npm start`
+## Table of Contents
+- [Installation](#installation)
+- [About](#about)
+- [Screenshots](#UI)
+- [Technologies Used:](#technologies)
+- [Status:](#status)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [To-Do](#todo)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Installation
+### 1. Clone the repo.
+```console
+$ git clone https://github.com/Bonnyca/StarWars.git
+```
+### 2. Change into the directory & install dependencies
+```console
+$ cd StarWars
+$ npm install
+```
+### 3. Run the server:
+```console
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app. Navigate your browser to [http://localhost:3000](http://localhost:3000) to access the application.
 
-### `npm run build`
+## About
+You can use it as a tiny wiki to refresh your memories regarding things like spaceships lengths of planets' climates.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
+### Main Page:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>You can navigate to any Star Wars Films from here. </p>
+<img src="media/Screen Shot 2022-04-24 at 1.14.04 PM.png" width="830" height="auto" >
 
-### `npm run eject`
+### Movie detailes page:
+<p>It displays the number of starships, planets and species filmed in this movie. You can navigate to full lists of Starships, Planets or Species.</p>
+<img src="media/Screen Shot 2022-04-24 at 1.14.12 PM.png" width="830" height="auto" >
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Lists
+<p>If there is more then one page, you can navigate using "Previous Page" and "Next Page" buttons.</p>
+<P> All numbers dispayed in US-locale format.</p>
+<img src="media/Screen Shot 2022-04-24 at 1.14.20 PM.png" width="830" height="auto" >
+<img src="media/Screen Shot 2022-04-24 at 1.14.32 PM.png" width="830" height="auto" >
+<img src="media/Screen Shot 2022-04-24 at 1.14.45 PM.png" width="830" height="auto" >
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies Used
 
-### Analyzing the Bundle Size
+![GitHub language count](https://img.shields.io/github/languages/count/{Bonnyca}/{StarWars})
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<img alt="React" src="https://img.shields.io/static/v1.svg?label=&message=React&style=flat-square&color=61daeb">
 
-### Making a Progressive Web App
+## Status:
+```diff
++ In progress...
+```
+In progress
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## To-Do
+- [ ] Add a function to calculate dencity on each planet and display it in the Planets table;
+- [ ] Add a parallax effect on the landing page;
+- [ ] Add a 404 page
+- [ ] Break down into small reusable components
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
