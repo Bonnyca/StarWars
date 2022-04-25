@@ -5,11 +5,6 @@
 This project is the pre-work for Code the Dream’s Advanced classes. 
 </span>
 
-<br>
-
-## Link
-To-do: add link to the project hosted on Github
-
 ## Table of Contents
 - [Installation](#installation)
 - [About](#about)
